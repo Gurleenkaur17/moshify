@@ -7,8 +7,8 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -17,102 +17,126 @@ body {
   color: var(--color-body);
 }
 
-
 /* Typography */
 h1,
 h2,
 h3 {
-    color: var(--color-headings);
-    margin-bottom: 1rem;
-
+  color: var(--color-headings);
+  margin-bottom: 1rem;
 }
 
-h1{
-    font-size: 7rem;;
+h1 {
+  font-size: 7rem;
 }
 
-h2{
-    font-size: 4rem;
+h2 {
+  font-size: 4rem;
 }
 
-h3{
-    font-size: 3rem;
+h3 {
+  font-size: 3rem;
 }
 
-p{
+p {
   margin-top: 0;
-
 }
 
-@media screen and (min-width:1024px){
-    h1{
-        font-size: 8rem;;
-    }
-    h2{
-        font-size: 4rem;
-    }
-    
-    h3{
-        font-size: 2.4rem;
-    }
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
 }
 
 /* Links */
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.link-arrow{
-    color: var(--color-accent);
-    text-transform: capitalize;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.link-arrow::after{
-    content: '-->';
-    margin-left: 5px;
-    transition: margin 0.15s;
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.link-arrow:hover::after{
-    margin-left: 10px;
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
 }
 
-@media screen and (min-width:1024px){
-    .link-arrow{
-        font-size: 1.5rem;
-    }
+.link-arrow:hover::after {
+  margin-left: 10px;
 }
 
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
 
 /* Badges */
-.badge{
-    border-radius: 20px;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 0.5rem 2rem;
-    white-space: nowrap;
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
 }
 
-.badge--primary{
-    background-color: var(--color-primary);
-    color: #ffff;
+.badge--primary {
+  background-color: var(--color-primary);
+  color: #ffff;
 }
 
-.badge--secondary{
-    background-color: var(--color-secondary);
-    color: #ffff;
+.badge--secondary {
+  background-color: var(--color-secondary);
+  color: #ffff;
 }
 
-.badge--small{
-    font-size: 1.6rem;
+.badge--small {
+  font-size: 1.6rem;
 }
 
-@media screen and (min-width:1024px){
-    .badge{
-        font-size: 1.5rem;
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  color: var(--color-headings);
+  padding-left: 0;
+}
+
+.list--inline .list__item{
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick{
+    padding-left: 3rem;
+    list-style-image: url(../icons/tick.svg);
+}
+
+.list--tick .list__item{
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item{
+        padding-left: 0;
     }
-    .badge--small{
-        font-size: 1.2rem;
-    }
-}
+  }
