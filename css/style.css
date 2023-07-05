@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Color Palette */
 
 :root {
@@ -120,44 +126,112 @@ a {
   padding-left: 0;
 }
 
-.list--inline .list__item{
-    display: inline-block;
-    margin-right: 2rem;
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
 }
 
-.list--tick{
-    padding-left: 3rem;
-    list-style-image: url(../icons/tick.svg);
+.list--tick {
+  padding-left: 3rem;
+  list-style-image: url(../icons/tick.svg);
 }
 
-.list--tick .list__item{
-    padding-left: 0.5rem;
-    margin-bottom: 1rem;
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1024px) {
-    .list--tick .list__item{
-        padding-left: 0;
-    }
+  .list--tick .list__item {
+    padding-left: 0;
   }
+}
 
 /* Icons */
-.icon{
-    width: 40px;
-    height: 40px;
+.icon {
+  width: 10px;
+  height: 10px;
 }
 
-.icon--primary{
-    fill: var(--color-primary);
-
+.icon--primary {
+  fill: var(--color-primary);
 }
 
-.icon-container{
-    background: #f3f9fa;
-    width: 64px;
-    height: 64px;
-    border-radius: 50px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.icon-container {
+  background: gold;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
 }
+
+.icon--white {
+  fill: #ffff;
+  margin-right: 0.5rem;
+}
+
+/* buttons */
+.btn {
+  border-radius: 4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.btn--primary {
+  color: #ffff;
+  background: var(--color-primary);
+}
+
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+
+.btn--secondary {
+  color: #ffff;
+  background: var(--color-secondary);
+}
+
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+
+.btn--accent {
+  color: #ffff;
+  background: var(--color-accent);
+}
+
+.btn--accent:hover {
+  background: #fd4516;
+}
+
+.btn--block {
+  width: fit-content;
+  display: inline-block;
+}
+
+.btn--outline {
+  border: 2px solid var(--color-headings);
+  background: #ffff;
+  color: var(--color-headings);
+}
+
+.btn--outline:hover {
+  background: var(--color-headings);
+  color: #ffff;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .btn{
+        font-size: 1.5rem;
+    }
+  }
