@@ -229,9 +229,28 @@ a {
   color: #ffff;
 }
 
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Inputs */
+.input {
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  padding: 1.5rem 3.5rem;
+  outline: 0;
+  color: var(--color-headings);
+  font-size: 2rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
 
 @media screen and (min-width: 1024px) {
-    .btn{
-        font-size: 1.5rem;
-    }
+  .input {
+    font-size: 1.5rem;
   }
+}
