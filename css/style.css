@@ -157,7 +157,7 @@ a {
   height: 40px;
 }
 
-.icon--small{
+.icon--small {
   width: 30px;
   height: 30px;
 }
@@ -177,7 +177,7 @@ a {
   margin: 1rem 0;
 }
 
-.icon-container--accent{
+.icon-container--accent {
   background: var(--color-accent);
 }
 
@@ -240,6 +240,13 @@ a {
 .btn--outline:hover {
   background: var(--color-headings);
   color: #ffff;
+}
+
+.btn--stretched {
+  justify-self: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin: 1rem 1rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -458,53 +465,48 @@ a {
   }
 } */
 
- @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .grid--1x2 {
-   align-items: start;
+    align-items: start;
   }
-  .grid--1x2 .quote__text{
+  .grid--1x2 .quote__text {
     padding-top: 5rem;
   }
 }
 
 /* Testinomial */
-.testimonial {
-}
-
-.testimonial__image{
+.testimonial__image {
   padding: 6rem;
   padding-top: 3rem;
   padding-bottom: 0;
   position: relative;
 }
 
-.testimonial__image >img {
+.testimonial__image > img {
   width: 100%;
 }
 
-.testimonial__image > .icon-container{
+.testimonial__image > .icon-container {
   position: absolute;
   top: 35px;
   right: 32px;
-
 }
 
 @media screen and (min-width: 768px) {
-  .testimonial .qoute
-  {
+  .testimonial .qoute {
     font-size: 3rem;
   }
 
-  .testimonial .qoute{
+  .testimonial .qoute {
     margin-left: 6rem;
   }
-  .testimonial__image{
+  .testimonial__image {
     padding: 3rem;
     padding-top: 2.5rem;
     padding-bottom: 5rem;
     position: relative;
   }
-  .testimonial__image > .icon-container{
+  .testimonial__image > .icon-container {
     position: absolute;
     top: 35px;
     right: 1px;
@@ -512,9 +514,48 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .testimonial .quote__text
-  {
+  .testimonial .quote__text {
     font-size: 2.5rem;
   }
 }
 
+/* Callouts */
+
+.callout {
+  padding: 4rem;
+  border-radius: 3px;
+}
+.callout__content {
+  text-align: center;
+}
+.callout--primary {
+  background: var(--color-primary);
+  color: #ffff;
+}
+
+.callout--heading {
+  margin-top: 0;
+  line-height: 1.1;
+  color: #ffff;
+}
+
+.callout--para {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .btn {
+    align-self: center;
+    justify-self: left;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    margin: 1rem 3rem;
+  }
+}
