@@ -14,48 +14,39 @@
     <title>Document</title>
   </head>
   <body>
-   <div class="grid grid--1x2">
-    <div >
-      <img class="grid__image" src="icons/ipad.png" alt="">
-    </div>
-    <div class="grid__text">
-      <div class="media">
-        <div class="media__image">
-          </svg><svg class="icon icon--primary">
-              <use xlink:href="icons/sprite.svg#menu"></use>
+    <div style="padding: 2rem;">
+   <div class="card testimonial">
+    <div class="grid grid--1x2">
+        <div class="testimonial__image">
+          <img src="icons/testimonial.jpg" alt="">
+          <span class="icon-container icon-container--accent">
+          </svg><svg class="icon icon--white icon--small">
+              <use xlink:href="icons/sprite (1).svg#quotes"></use>
           </svg>  
+          </span>
         </div>
-        <div class="media__body">
-          <h3 class="media__title">Easy Start & Managed Updates</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate itaque, suscipit fuga magnam iure alias doloremque repellat eveniet architecto?</p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media__image">
-          </svg><svg class="icon ">
-              <use xlink:href="icons/sprite (1).svg#settings"></use>
-          </svg>          
-        </div>
-        <div class="media__body">
-          <h3 class="media__title">Staging, GIT & WP-CLI</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate itaque, suscipit fuga magnam iure alias doloremque repellat eveniet architecto?</p>
-        </div>
-      </div>
-
-      <div class="media">
-        <div class="media__image">
-          </svg><svg class="icon ">
-              <use xlink:href="icons/sprite (1).svg#wordpress"></use>
-          </svg>          
-        </div>
-        <div class="media__body">
-          <h3 class="media__title">Dynamic Caching & More</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate itaque, suscipit fuga magnam iure alias doloremque repellat eveniet architecto?</p>
-        </div>
-      </div>
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur
+            provident est quia, rem similique cupiditate eaque omnis consectetur
+            aliquid voluptates!
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                </svg><svg class="icon icon--primary quote__line">
+                    <use xlink:href="icons/sprite (1).svg#line"></use>
+                </svg>          
+              </div>
+              <div class="media__body">
+                <h3 class="media__title quote__author">John Smith</h3>
+                <p class="qoute__organisation">Mosh Company Ceo</p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
     </div>
    </div>
-    
+  </div>
   </body>
 </html>
