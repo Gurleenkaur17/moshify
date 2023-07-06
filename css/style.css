@@ -420,3 +420,36 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* grid */
+body{
+  background-color: black;
+}
+.grid{
+  display: grid;
+}
+
+.grid__image{
+  width: 50rem;
+  padding: 4rem;
+}
+
+.grid__text{
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
