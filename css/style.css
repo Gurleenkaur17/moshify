@@ -105,7 +105,7 @@ a {
 }
 
 .badge--secondary {
-  background-color: #003cff13;
+  background-color: var(--color-secondary);
   color: #ffff;
 }
 
@@ -198,6 +198,14 @@ a {
   cursor: pointer;
   white-space: nowrap;
   text-align: center;
+  outline: 0;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--primary {
@@ -279,11 +287,12 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
 }
 
 .input-group .btn {
-  margin: 4px;
+  margin: 2px;
 }
 @media screen and (min-width: 1024px) {
   .input {
@@ -706,12 +715,56 @@ a {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
-@media screen and (min-width:768px) {
-  .hero{
+@media screen and (min-width: 768px) {
+  .hero {
     padding-top: 0;
   }
 
-  .hero__content{
+  .hero__content {
     align-self: center;
+  }
+}
+
+/* Domain Block */
+.container {
+  width: 100%;
+}
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+
+}
+
+.block-domain .btn {
+  padding: 2rem 2rem;
+  margin: 0.5rem;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-rows: repeat(3, 6rem);
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .block-domain .block__header {
+    text-align: center;
+  }
+  .block-domain .block__header p {
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
