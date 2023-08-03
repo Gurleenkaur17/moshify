@@ -655,6 +655,8 @@ a {
   }
 }
 
+
+
 /* Navigation Bar */
 .nav {
   background: black;
@@ -718,6 +720,14 @@ a {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .nav{
+    border-bottom: 0.2px solid #3e3d3d;
+  }
+  
+}
+
+
 /* hero */
 .hero__tagline {
   font-size: 2rem;
@@ -735,6 +745,10 @@ a {
   clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 }
 
+.hero .container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 0;
@@ -833,7 +847,8 @@ a {
 }
 
 .features .grid__image {
-  margin-bottom: 4.5rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 
 .features .block__header {
